@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> SAPIN </title>
+    <link rel="shortcut icon" href="Imagens/logo_sapin.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/inicial.css">
+</head>
+<body>
+    <div id="desktop" class="principal">
+        <form action="">
+            <div id="logo">
+                <img src="Imagens/logo_sapin_transparente.png" width="150px" alt="logo sapin" id="logo-sapin">
+            </div>
+            <section>
+                <div class="subtitulo">
+                    BEM-VINDO <br>
+                    VOCÊ É:
+                </div><br><br>
+            </section>
+            <ul class="card-inicial">
+                <li id="card-ADM" class="cards">
+                    <div class="card">
+                        <img src="Imagens/ADM.png" width="80px" class="icone">
+                        <div class="TextCard">
+                            <h3 class="titulo-card"> COORDENADOR </h3><br>
+                            <div class="texto">
+                                <p class="explicacao">
+                                    Um Coordenador tem acesso a perfil próprio, podendo também visualizar,
+                                    cadastrar, editar e deletar Eixo, Curso, Turma, Professor e P.I..
+                                </p><br>
+                            </div>
+                        </div>
+                        <a href="Coordenador/login-coordenador.html">
+                        <button class="btn botoes-card" type="button"> ENTRAR </button>
+                        </a>
+                        <br>
+                    </div>
+                </li>
+                <li id="card-Professor" class="cards">
+                    <div class="card">
+                        <img src="Imagens/Professor.png" width="97px" class="icone">
+                        <div class="TextCard">
+                            <h3 class="titulo-card"> PROFESSOR </h3><br>
+                            <div class="texto">
+                                <p class="explicacao">
+                                    Um Professor tem acesso a perfil próprio, podendo também cadastrar
+                                    na Tabela de Projeto integrador os P.I.'s dos alunos do Senac.
+                                </p>
+                                <br>
+                            </div>
+                        </div>
+                        <a href="Professor/login-professor.html">
+                        <button class="btn botoes-card" type="button"> ENTRAR </button>
+                        </a>
+                        <br>
+                    </div>
+                </li>
+                <li id="card-Visitante" class="cards">
+                    <div class="card">
+                        <img src="Imagens/Visitante.png" width="73px" class="icone">
+                        <div class="TextCard">
+                            <h3 class="titulo-card"> VISITANTE </h3><br>
+                            <div class="texto">
+                                <p class="explicacao">
+                                    Um Visitante tem acesso a projetos integradores criados por alunos do
+                                    Senac, podendo visitar cada projeto já feito na tabela de P.I..
+                                </p><br>
+                            </div>
+                        </div>
+                        <a href="visitante.php">
+                        <button class="btn botoes-card" type="button"> ENTRAR </button>
+                        </a>
+                    <br>
+                    </div>
+                </li>
+            </ul>
+        </form>
+    </div>
+
+    
+    <!--                                                           inicio da DIV MOBILE                                                                                                           -->
+
+<div id="mobile" class="principal-mobile"> <!-- inicio da DIV PRINCIPAL -->
+    <form action=""> <!-- inicio do FORM -->
+  
+        <div id="logo">
+            <img src="Imagens/logo_sapin_transparente.png" width="200px" alt="logo sapin" id="logo-sapin">
+        </div>
+
+        <section>
+          <div class="subtitulo">
+            BEM-VINDO <br>
+            VOCÊ É:
+        </div><br><br>
+  
+        <div class="botoes-centralizados">
+              <div class="botao">
+  
+                <a href="Coordenador/login-coordenador.html"><button class="botoes" id="botao-adm" type="button"> Administrador </button></a><br>
+  
+            </div>
+  
+              <div class="botao">
+  
+                <a href="Professor/login-professor.html"><button class="botoes" id="botao-professor" type="button"> Professor </button></a><br>
+  
+            </div>
+  
+              <div class="botao">
+  
+                <a href="visitante.php"><button class="botoes " id="botao-visitante" type="button"> Visitante </button></a><br>
+            </div>
+          </div>
+        </section>
+  
+    </form> <!-- fim do FORM-->
+  </div>
+  
+   <!--                                                            fim da DIV MOBILE                                                        --> 
+    
+    
+</body>
+<script src="../JS/jquery-3.6.0.min.js"></script>
+<script src="../JS/bootstrap.min.js"></script>
+<script src="../JS/sweetalert2.all.min.js"></script>
+ 
+</html>

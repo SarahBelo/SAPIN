@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Professor</title>
+    <link rel="shortcut icon" href="../Imagens/logo_sapin.png" type="sapin">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../CSS/bootstrap-grid.css">
+    <link rel="stylesheet" href="../CSS/bootstrap-grid.css.map">
+    <link rel="stylesheet" href="../CSS/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../CSS/bootstrap-grid.min.css.map">
+    <link rel="stylesheet" href="../CSS/bootstrap-reboot.css">
+    <link rel="stylesheet" href="../CSS/bootstrap-reboot.css.map">
+    <link rel="stylesheet" href="../CSS/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="../CSS/bootstrap-reboot.min.css.map">
+    <link rel="stylesheet" href="../CSS/bootstrap.css">
+    <link rel="stylesheet" href="../CSS/bootstrap.css.map">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css.map">
+    <link rel="stylesheet" href="../CSS/cadastro.css">
+    <link rel="stylesheet" href="../CSS/perfil.css">
+    <link rel="stylesheet" href="../CSS/tela-nave-eixo.css">
+    <link rel="stylesheet" href="../CSS/modal.css">
+    <link rel="stylesheet" href="../CSS/responsividade-mobile.css">
+    <link rel="stylesheet" href="../CSS/responsividade-mobile-adm.css">
+</head>
+
+<body>
+    
+    <div id="fundo">
+        <form action="">
+            <div id="img">
+                <a href=""><img src="../Imagens/logo_sapin_transparente.png" width="130px" alt="logo sapin" id="logo-sapin" class="nav-imagem"></a> <!-- logo do SAPIN -->
+            </div>
+            <h1 style="text-align: center;">Login <br> Professor</h1>
+            <br>
+            <label for="txtLogin">Email:</label>
+            <br>
+            <input type="text" id="txtEmail" required>
+            <br>
+            <label for="txtSenha">Senha:</label>
+            <br>
+            <input type="password" id="txtSenha" required>
+            <br><br>
+            <label for="txtEsqueci"><a href="esqueciSenha.php">Esqueceu sua senha? Clique aqui</a></label>
+            <div id="buttons">
+                <button class="btn btn-primary">Cancelar</button>
+                <button class="btn btn-primary" id="btnEntrar">Entrar</button>
+            </div>
+            <br>
+        </form>
+    </div>
+</body>
+<script src="../JS/jquery-3.6.0.min.js"></script>
+<script src="../JS/bootstrap.min.js"></script>
+<script src="../JS/sweetalert2.all.min.js"></script>
+
+  <script type="text/javascript">
+  $(document).ready(function() {
+    $('#btnEntrar').on('click', async function(e) {
+        e.preventDefault();
+        const config = {
+            method: "POST",
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                login: $('#txtEmail').val(),
+                senha: $('#txtSenha').val()
+            })
+        };
+        
+        const request = await fetch('../Controller/Professor/LoginProfessor.php', config);
+        const response = await request.json();
+        if (response.status === 1) {
+            alert('Usuário logado');
+            window.location.href = `nav-projeto-professor.php?id=${response.id}`;
+        } else {
+            alert('Usuário ou senha incorreta');
+        }
+    });
+});
+
+
+</script>
+
+  </html>
