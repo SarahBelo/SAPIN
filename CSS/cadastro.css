@@ -1,0 +1,90 @@
+:root {
+    --cor0: #004c94;
+    --cor1: #f7941d;
+    --cor2: #fdc180;
+    --cor4: white;
+}
+
+body {
+    background-color: var(--cor0);
+    color: var(--cor4);
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+}
+
+div#fundo{
+    margin: 30px auto auto auto;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--cor0);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.315);
+}
+
+#img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+select{
+    padding: 7px;
+    border-style:solid;
+    text-align:left; 
+    border-width:1px; 
+    border-radius:10px; 
+    border-color:#000000; 
+    box-shadow: 0px 0px 6px 0px rgba(255,255,255,.75);
+}
+
+input{
+    min-width: 100px;
+    width: 420px;
+    border-style:solid;
+    margin-top: 2px;
+    margin-bottom: 10px; 
+    padding:7px; 
+    font-size:17px; 
+    text-align:left; 
+    border-width:1px; 
+    border-radius:10px; 
+    border-color:#000000; 
+    box-shadow: 0px 0px 6px 0px rgba(255,255,255,.75);  
+}
+
+.btn{
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    background-color: var(--cor0);
+    border-radius: 6px;
+    margin: 5px;
+}
+
+.btn:hover , .btn-primary:hover{
+    background-color: var(--cor4);
+    color: var(--cor0);
+}
+
+#adcParticipante, #remParticipante{
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--cor4);
+    background-color: var(--cor0);
+    margin-left: 8px;
+    border-radius: 30px;
+    padding: 2px 10px;
+}
+
+#adcParticipante:hover, #remParticipante:hover{
+    background-color: var(--cor4);
+    color: var(--cor0);
+} 

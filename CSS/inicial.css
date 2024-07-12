@@ -1,0 +1,195 @@
+:root{
+    --cor0: #004c94; /* cria a variável --cor0 para a cor azul */
+    --cor1: #f7941d; /* cria a variável --cor1 para a cor laranja */
+    --cor2: #fdc180; /* cria a variável --cor2 para a cor laranja claro */
+    --cor3: #000000; /* cria a variável --cor3 para a cor preto */
+    --cor4: #ffffff; /* cria a variável --cor4 para a cor branco */
+}
+
+body{
+    background-color: var(--cor0); /* deixa o fundo da cor azul */
+    color: var(--cor0); /* deixa as letras da cor branca */
+    font-family: "Montserrat", sans-serif; /* da uma fonte as letras */
+    font-weight: bold; /* deixa a fonte em negrito */
+    color: var(--cor3); /* deixa as letras da cor preta */
+}
+
+/* DIV PRINCIPAL */
+div.principal{
+    margin: 30px auto auto auto; /* centraliza a DIV PRINCIPAL */
+    max-width: 800px; /* deixa a DIV PRINCIPAL com o tamanho de 800px */
+    display: flex; /* define o tamanho inicial da DIV PRINCIPAL */
+    align-items: center; /* centraliza todos os itens da DIV PRINCIPAL */
+    justify-content: center; /* alinha os elementos da DIV PRINCIPAL */
+    background-color: var(--cor0); /* deixa o fundo da cor azul */
+    border-radius: 15px; /* deixa a borda da DIV PRINCIPAL arredondada */
+    border: 1px solid var(--cor1); /* deixa a borda da cor branca */
+    font-family: "Montserrat", sans-serif; /* da uma fonte as letras */
+}
+
+div#logo{
+    text-align: center; /* centraliza a logo do senac */
+}
+
+section{
+    margin-top: 10px; /* da uma margem de 10px ao topo do SUBTITULO */
+    margin: 10px; /* da uma margem entre a SECTION e a DIV PRINCIPAL */
+    text-align: center; /* centraliza o texto do SUBTITULO */
+}
+
+.subtitulo{
+    color: var(--cor4); /* deixa as letras da cor branca */
+}
+
+/* CARDS */
+
+ul.card-inicial{
+    font-family: Arial, Helvetica, sans-serif; /* da uma fonte as letras */
+    margin: 0px auto; /* da uma margem a CARD-INICIAL */
+    text-align: center; /* alinha o texto no centro */
+    max-width: 640px; /* da um tamanho máximo a CARD-INICIAL */
+    padding: 0px; /* da uma distância de 0 entre os CARDS e as bordas do CARD INICIAL */
+}
+
+.cards{
+    display: inline-block; /* deixa os CARDS alinhados lado a lado */
+    width: 185px; /* define um tamanho para os CARDS */
+    margin: 0px 12px 30px; /* da uma margem aos CARDS */
+}
+
+div.card{
+    background-color: var(--cor4); /* deixa a cor do fundo branca */
+    border-radius: 15px; /* deixa as pontas da borda arredondadas */
+    border-color: var(--cor1); /* deixa a borda da cor branca */
+    align-items: center; /* alinha os itens no centro */
+    max-width: 300px; /* da um tamanho máximo para o CARD */
+}
+
+.icone{
+    margin: 10px; /* cria uma margem entre o ICONE e o CARD */
+}
+
+/* texto dos CARDS */
+.TextCard{
+    margin-top: 13px; /* da uma margem no topo do TEXTCARD */
+}
+
+div.texto{
+    max-width: 150px; /* espaço entre a EXPLICACAO e o CARD */
+}
+.titulo-card{
+    margin: 0px; /* da uma margem de 0px entre o TITULOCARD e o EXPLICACAO */
+    color: var(--cor0); /* da a cor branca as letras */
+    font-weight: bold; /* deixa as letras em negrito */
+    font-size: 15px; /* da o tamanho de 15px para as letras */
+}
+
+.explicacao{
+    display: block; /*  */
+    font-size: 11px; /* deixa as letras do tamanho 11px */
+    font-weight: normal; /* da um tamanho as letras */
+    margin: 0; /* da uma margem entre o EXPLICACAO e o BOTOES-CARD */
+    text-align: justify; /* alinha o texto igualmente */
+    color: var(--cor0); /* deixa as letras da cor azul */
+}
+
+.botoes-card{
+    border-radius: 6px; /* borda do botão */
+    padding: 10px 30px; /* tamanho do botão */
+    background-color: var(--cor1); /* deixa o fundo da cor laranja */
+    text-align: center; /* alinha o texto no centro */
+    color: var(--cor4); /* deixa as letras da cor branca */
+    font-weight: bold; /* deixa a fonte em negrito */
+}
+
+/* modal-login */
+div.modal{
+    color: var(--cor4); /* deixa as letras da cor branca */
+    background-color: transparent; /* deixa o fundo do modal transparente */
+}
+
+.fechar-modal{
+    color: var(--cor4); /* da a cor branca ao X */
+}
+
+div.modal-content{
+    background-color: var(--cor1); /* daixa o fundo da cor branca */
+    border-radius: 15px; /* arredonda a ponta da borda */
+    border-color: var(--cor4); /* da a cor branca a borda */
+    max-width: 800px; /* da um tamanho máximo a MODAL-CONTENT */
+    font-family: "Montserrat", sans-serif; /* da uma fonte as letras */
+}
+
+.input-modal{
+    background-color: var(--cor4); /* deixa o fundo da cor branca */
+    border-radius: 4px; /* deixa a ponta das bordas arredondada */
+    color: var(--cor0); /* deixa as letras da cor azul */
+    border-color: transparent; /* deixa transparente a borda do INPUT-MODAL */
+}
+
+.senha-modal{
+    background-color: var(--cor4); /* deixa o fundo da cor branca */
+    border-radius: 4px; /* deixa a ponta das bordas arredondada */
+    color: var(--cor0); /* deixa as letras da cor azul */
+    border-color: transparent; /* deixa transparente a borda do SENHA-MODAL */
+}
+
+.botoes-modal{
+    background-color: var(--cor0); /* deixa o fundo do BOTOES-MODAL da cor azul */
+    color: var(--cor4); /* deixa as letras da cor branca */
+}
+
+/* Muda o conteúdo da página de DESKTOP para MOBILE */
+#desktop {
+    display: none; /* impede que o #DESKTOP seja renderizado na tela */
+}
+
+#mobile {
+    margin-top: 30px;
+    display: none; /* impede que o #MOBILE seja renderizado na tela */
+}
+
+@media only screen and (min-width: 933px ) {
+    #desktop {
+        display: block; /* bloqueia o conteudo da tela se ela for menor que 600px */
+    }
+}
+
+@media only screen and (max-width: 933px) {
+    #mobile {
+        display: block; /* bloqueia o conteudo da tela se ela for maior que 600px */
+    }
+}
+
+.botoes-centralizados{
+    text-align: center; /* alinha o texto no centro */
+    align-items: center; /* alinha os itens no centro */
+    background-color: transparent; /* deixa o fundo da cor laranja */
+    color: var(--cor4); /* deixa as letras na cor branca */
+    padding: 10px 81px; /* tamanho do BOTOES-CENTRALIZADOS*/
+}
+
+.botoes{
+    border-radius: 6px; /* borda do botão */
+    border-color: transparent; /* deixa a borda dos botões transparente */
+    padding: 10px 30px; /* tamanho do botão */
+    background-color: var(--cor1); /* deixa o fundo da cor laranja */
+    text-align: center; /* alinha o texto no centro */
+    color: var(--cor4); /* deixa as letras da cor branca */
+    margin-top: 10px; /* da uma margem entre um botão e outro */
+    font-family: "Montserrat", sans-serif; /* da uma font as letras do botão */
+    font-weight: bold; /* deixa a fonte em negrito */
+    border: 1px solid var(--cor4); /* da a borda um tamanho em px e a cor branca */
+}
+
+#botao-adm{
+    padding: 10px 13px; /* tamanho do BOTAO-ADM */
+}
+
+#botao-professor{
+    padding: 10px 30px; /* tamanho do BOTAO-PROFESSOR */
+}
+
+#botao-visitante{
+    padding: 10px 34px; /* tamanho do BOTAO-VISITANTE */
+}

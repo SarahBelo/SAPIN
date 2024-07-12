@@ -1,0 +1,58 @@
+:root{
+    --cor0: #004c94; /* cria a variável --cor0 para a cor azul */
+    --cor1: #f7941d; /* cria a variável --cor1 para a cor laranja */
+    --cor2: #fdc180; /* cria a variável --cor2 para a cor laranja claro */
+    --cor3: #000000; /* cria a variável --cor3 para a cor preto */
+    --cor4: #ffffff; /* cria a variável --cor4 para a cor branco */
+}
+
+/* MODAL */
+/* cabeça do modal */
+.modal-header{
+    background-color: var(--cor0); /* cor de fundo do MODAL-HEADER */
+    align-items: center;
+}
+ 
+.botao-modal{
+    background-color: #2967f4; /* deixa o fundo do BOTAO-MODAL da cor azul */
+    border-radius: 3px; /* da uma borda ao BOTAO-MODAL */
+    border-color: transparent; /* deixa o fundo da borda transparente */
+    text-align: center; /* alinha o texto no centro */
+}
+ 
+.botoes-modal{
+    background-color: transparent; /* deixa o fundo do BOTOES-MODAL transparente */
+    margin-left: 50px; /* da uma margem a esquerda do BOTOES-MODAL */
+    margin-right: 50px; /* da uma margem a direita do BOTOES-MODAL */
+}
+ 
+.h2-modal-mobile{
+    color: var(--cor4); /* da a cor azul as letras do H1-MODAL-MOBILE */
+    font-size: medium; /* deixa a fonte do H1-MODAL-MOBILE pequena */
+    text-align: center; /* alinha o texto no centro */
+}
+ 
+/* corpo do modal */
+.modal-body{
+    background-color: #f2f2f2; /* da uma cor de fundo ao MODAL-BODY */
+    color: #454F63; /* cor das letras do MODAL-BODY */
+    text-align: center;
+}
+
+.cuca {
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+}
+ 
+.nav-modal-mobile{
+    background-color: var(--cor4); /* da a cor de fundo branca para NAV-MODAL-MOBILE */
+    padding: 14px 50px 14px 20px;
+    font: 16px;
+    color: #454F63; /* da uma cor as letras do NAV-MODAL-MOBILE */
+}
+ 
+.nav-modal-mobile:hover{
+    background-color: rgb(241, 240, 240); /* altera a cor de fundo */
+    color: #454F63; /* da uma cor as letras do NAV-MODAL-MOBILE */
+}

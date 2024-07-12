@@ -1,0 +1,29 @@
+:root{
+    --cor0: #004c94; /* cria a variável --cor0 para a cor azul */
+    --cor1: #f7941d; /* cria a variável --cor1 para a cor laranja */
+    --cor2: #fdc180; /* cria a variável --cor2 para a cor laranja claro */
+    --cor3: #000000; /* cria a variável --cor3 para a cor preto */
+    --cor4: #ffffff; /* cria a variável --cor4 para a cor branco */
+}
+
+@media only screen and (max-width: 933px) {  /* vai aplicar as mudanças a baixo caso a largura da tela seja menor que 933px */
+    body{
+        background-color: var(--cor0);
+    }
+    input {
+        width: 320px; /* muda o tamanho dos input da página para que eles não saiam para fora da tela */
+    }
+    select {                                 
+        width: 320px; /* muda o largura dos select da página para que eles não saiam para fora da tela */
+    }
+    textarea {
+        width: 320px; /* muda a largura da caixa de texto */
+    }
+    div#fundo {
+        border: transparent; /* deixa a borda da div transparente, ela não faz sentido na tela de um celular */
+        background-color: transparent;
+    }
+    .div-fundo-br{
+        display: none; /* esconde a div-fundo-br da tela */
+    }
+}

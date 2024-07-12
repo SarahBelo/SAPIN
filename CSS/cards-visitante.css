@@ -1,0 +1,126 @@
+cards.css
+:root {
+    --cor0: #004c94; /* cria a variável --cor0 para a cor azul */
+    --cor1: #f7941d; /* cria a variável --cor1 para a cor laranja */
+    --cor2: #fdc180; /* cria a variável --cor2 para a cor laranja claro */
+    --cor3: #000000; /* cria a variável --cor3 para a cor preto */
+    --cor4: #ffffff; /* cria a variável --cor4 para a cor branco */
+}
+
+#cards-container {
+    margin: 25px auto;
+    width: 90%;
+    overflow: hidden;
+    align-items: center; /* centraliza todos os itens da DIV PRINCIPAL */
+    justify-content: center; /* alinha os elementos da DIV PRINCIPAL */
+}
+
+.card {
+    background-color: var(--cor0);
+    padding: 20px;
+    display: inline-block;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    max-width: 350px;
+    width: 350px;
+    max-height: 400px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    margin: 5px;
+}
+
+.titulo {
+    text-align: center;
+    color: var(--cor1);
+    margin-bottom: 6px;
+    font-weight: bold;
+    font-size: medium;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-height: 47px;
+    height: 47px;
+    max-width: 300px;
+    width: 300px;
+    line-height: 100%;
+    cursor: pointer;
+}
+
+.corA {
+    color: var(--cor2);
+}
+
+.participantes {
+    text-align: center;
+    color: var(--cor4);
+    margin-bottom: 8px;
+    max-height: 100px;
+    height: 100px;
+    max-width: 300px;
+    width: 300px;
+    line-height: 90%;
+    cursor: pointer;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.palavrasChaves {
+    margin-left: 50px;
+    margin-bottom: 8px;
+    font-size: medium;
+}
+
+.link {
+    margin-top: 8px;
+
+    button {
+        width: 305px;
+        margin: 1px;
+        border-radius: 3px;
+        border-color: transparent;
+        background-color: var(--cor1);
+        text-align: center;
+        color: var(--cor4);
+        font-weight: bold;
+        text-decoration: none;
+    }
+}
+
+@media only screen and (max-width: 400px) {  /* vai aplicar as mudanças a baixo caso a largura da tela seja menor que 933px */
+    #cards-container {
+        margin-left: auto;
+        margin-right: auto;
+        margin: auto;
+        width: 350px;
+        overflow: auto;
+        align-items: center; /* centraliza todos os itens da DIV PRINCIPAL */
+        justify-content: center; /* alinha os elementos da DIV PRINCIPAL */
+    }
+
+    .card {
+        background-color: var(--cor0);
+        padding: 20px;
+        display: inline-block;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        max-width: 340px;
+        width: 340px;
+        max-height: 500px;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        margin: 5px;
+    }
+
+    .link {
+        margin-top: 8px;
+    
+        button {
+            width: 299px;
+            margin: 1px;
+            border-radius: 3px;
+            border-color: transparent;
+            background-color: var(--cor1);
+            text-align: center;
+            color: var(--cor4);
+            font-weight: bold;
+            text-decoration: none;
+        }
+    }
+}

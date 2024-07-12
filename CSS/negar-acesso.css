@@ -1,0 +1,57 @@
+:root{
+    --cor0: #004c94; /* cria a variável --cor0 para a cor azul */
+    --cor1: #f7941d; /* cria a variável --cor1 para a cor laranja */
+    --cor2: #fdc180; /* cria a variável --cor2 para a cor laranja claro */
+    --cor3: #000000; /* cria a variável --cor3 para a cor preto */
+    --cor4: #ffffff; /* cria a variável --cor4 para a cor branco */
+}
+
+body {
+    background-color: var(--cor0);
+    color: var(--cor4);
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+}
+
+a{
+    color: var(--cor4);
+    text-decoration: none;
+}
+
+.fundo{
+    margin: 30px auto auto auto;
+    max-width: 600px;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* alinha o texto no centro */
+}
+
+.h1{
+    font-size: 50px;
+    color: var(--cor1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.link{
+    color: var(--cor2);
+    text-decoration: none;
+}
+@media only screen and (max-width: 900px) {
+    .fundo{
+        font-size: small;
+    }
+}
+

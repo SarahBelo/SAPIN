@@ -1,0 +1,129 @@
+.barra {
+    width: 27px; /* da uma largura de 27px a BARRA-BURGUER */
+  height: 4px; /* da uma altura de 4px a BARRA-BURGUER */
+  background-color: #78849E; /* da uma cor de fundo a BARRA-BURGUER */
+  margin: 5px; /* da uma margem de 5px entre uma BARRA-BURGUER e outra BARRA-BURGUER */
+  border-radius: 6px; /* deixa as pontas da borda da BARRA-BURGUER arredondadas */
+}
+
+.btn-mobile {
+    display: none;
+    justify-content: right;
+}
+
+#opcoes {
+    display: none;
+    justify-content: left;
+}
+
+#logo-mobile {
+    display: none;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.nav-btn {
+    border-radius: 6px; /*  */
+    border-color: transparent; /*  */
+    background-color: var(--cor1); /*  */
+    text-align: center; /*  */
+    color: var(--cor4); /*  */
+    margin: 5px; /*  */
+    font-family: "Montserrat", sans-serif; /*  */
+    font-weight: bold; /*  */
+    padding: 5px 15px;
+}
+
+.nav-btn:hover {
+    color: var(--cor0); /*  */
+    background-color: var(--cor2); /*  */
+    border-color: var(--cor0); /*  */
+}
+
+.table-container{
+    overflow: auto;
+}
+
+@media only screen and (max-width: 1201px) {
+    ul.nav {
+        display: none;
+    }
+
+    #logo-mobile {
+        display: block;
+    }
+
+    #opcoes {
+        display: block;
+    }
+
+    .btn-mobile {
+        display: block;
+    }
+
+    .nav-btn {
+        margin: 0px;
+        padding: 1px 6px;
+    }
+    
+    .navegar {
+        justify-content: space-between;
+    }
+    .btn-primary{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: var(--cor4); /* deixa o fundo do BOTAO-MODAL da cor branca */
+    font-weight: bold;
+    color: var(--cor0);
+    width: 99.7%;    
+    border-radius: 6px;
+    border-color: transparent; /* deixa o fundo da borda transparente */
+    text-align: center; /* alinha o texto no centro */
+}
+    .btn {
+        width: 98.9%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .btn-table-container {
+        margin: 25px auto;
+        width: 90%;
+        overflow: hidden;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+
+        button.btn-primary{
+            margin-bottom: 20px;
+            margin-top: 20px;
+            background-color: var(--cor4); /* deixa o fundo do BOTAO-MODAL da cor branca */
+            font-weight: bold;
+            color: var(--cor0);
+            width: 99.7%;    
+            border-radius: 0px;
+            border-color: transparent; /* deixa o fundo da borda transparente */
+            text-align: center; /* alinha o texto no centro */
+        }
+    }
+}
+
+@media only screen and (max-width: 933px) {  /* vai aplicar as mudanças a baixo caso a largura da tela seja menor que 933px */
+    .btn {
+        width: 98.5%;
+    }
+
+    .btn-primary{
+        margin-top: 20px;
+        background-color: var(--cor4); /* deixa o fundo do BOTAO-MODAL da cor branca */
+        font-weight: bold;
+        color: var(--cor0);
+        width: 99.7%;    
+        border-radius: 6px; /* da uma borda ao BOTAO-MODAL */
+        border-color: transparent; /* deixa o fundo da borda transparente */
+        text-align: center; /* alinha o texto no centro */
+    }
+    input {
+        width: 320px; /* muda o tamanho dos input da página para que eles não saiam para fora da tela */
+    }
+}
